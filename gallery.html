@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ギャラリー - ROZZO Sicilia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <!-- Side Menu -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>MENU</h2>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> ホームページ </a></li>
+                <li><a href="concept.html"><i class="fas fa-calendar-check"></i> ROZZOはこんなお店です </a></li>
+                <li class="has-submenu">
+                    <a href="menu.html"><i class="fas fa-utensils"></i> メニュー <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="menu.html#main">メインメニュー</a></li>
+                        <li><a href="menu.html#season">季節のメニュー</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="wine.html"><i class="fas fa-wine-glass-alt"></i> ワイン <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="wine.html#list">ワインリスト</a></li>
+                        <li><a href="wine.html#delivery">ワイン配達</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="gallery.html"><i class="fas fa-images"></i> ギャラリー <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="gallery.html#interior">インテリア</a></li>
+                        <li><a href="gallery.html#dishes">料理</a></li>
+                        <li><a href="gallery.html#events">イベント</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html"><i class="fas fa-map-marker-alt"></i> お問い合わせ </a></li>
+                <li><a href="job.html"><i class="fas fa-map-marker-alt"></i> 求職者向けの求人情報 </a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- darkness bg -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="logo">
+                <h1>ROZZO SICILIA</h1>
+            </div>
+            
+            <div class="contacts">
+                <a href="tel:+810354471955" aria-label="電話で連絡してください"><i class="fas fa-phone"></i></a>
+                <a href="https://www.instagram.com/rozzo_sicilia?igsh=YWYwZm0zYW1wMXgw" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#app" aria-label="もうすぐiPhoneアプリが登場します"><i class="fas fa-mobile-alt"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main content -->
+    <main>
+        <div class="container">
+            <div class="page-content">
+                <h1>レストランのギャラリー</h1>
+                <p class="gallery-intro">店内の雰囲気や絶品料理やイベントの写真を通して、当店の雰囲気を体感してください。</p>
+                
+                <!-- Gallery Nav -->
+                <nav class="gallery-nav">
+                    <a href="#interior" class="gallery-nav-link active">インテリア</a>
+                    <a href="#dishes" class="gallery-nav-link">料理</a>
+                    <a href="#events" class="gallery-nav-link">イベント</a>
+                </nav>
+                
+                <!-- Interier -->
+                <section id="interior" class="gallery-section">
+                    <h2><i class="fas fa-building"></i> レストランのインテリア </h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="photo\front2.jpeg" alt="マインゲイト" class="gallery-image">
+                            <div class="gallery-caption">レストランの正面玄関</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\rozzo1.jpeg" alt="ロッツォシチリア・ホール1" class="gallery-image">
+                            <div class="gallery-caption">ロッツォシチリア・ホール</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\rozzo2.jpeg" alt="ロッツォシチリア・ホール2" class="gallery-image">
+                            <div class="gallery-caption">ロッツォシチリア・ホール</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\ponte1.jpeg" alt="ハナレ・ホール1" class="gallery-image">
+                            <div class="gallery-caption">ハナレ・ホール</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\ponte2.jpeg" alt="ハナレ・ホール2" class="gallery-image">
+                            <div class="gallery-caption">ハナレ・ホール</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\ponte3.jpeg" alt="ハナレ・ホール3" class="gallery-image">
+                            <div class="gallery-caption">ハナレ・ホール</div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Food -->
+                <section id="dishes" class="gallery-section">
+                    <h2><i class="fas fa-utensils"></i> 料理 </h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="photo\panll.jpg" alt="パネッレ" class="gallery-image">
+                            <div class="gallery-caption">パネッレ</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\sanseihamu.jpg" alt="スペイン産生ハムとロンバルディアの赤メロン" class="gallery-image">
+                            <div class="gallery-caption">スペイン産生ハムとロンバルディアの赤メロン</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\orangeuikyo.jpg" alt="ブラッドオレンジとウイキョウ、紅富士サーモンマリネのサラダ" class="gallery-image">
+                            <div class="gallery-caption">ブラッドオレンジとウイキョウ、紅富士サーモンマリネのサラダ</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\sabasarada.jpg" alt="鯖のサラダ" class="gallery-image">
+                            <div class="gallery-caption">鯖の燻製と新潟黒崎茶豆、キウイ、ミント、きゅうり</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\sashimasarada.jpg" alt="佐島のサラダ" class="gallery-image">
+                            <div class="gallery-caption">佐島の真蛸、アボカド、フルーツトマトサラダ</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\magurotartar.jpg" alt="マグロのタルタル" class="gallery-image">
+                            <div class="gallery-caption">マグロのタルタル</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mizunasu.jpg" alt="水茄子と豚の塩漬け肉" class="gallery-image">
+                            <div class="gallery-caption">水茄子と豚の塩漬け肉</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mozarella.jpg" alt="モッツァレラチーズとトマト" class="gallery-image">
+                            <div class="gallery-caption">モッツァレラチーズとトマト</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\buta2.jpg" alt="豚バラ肉のハム" class="gallery-image">
+                            <div class="gallery-caption">豚バラ肉のハム</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\kinmetai.jpg" alt="金目鯛と巨峰のクルディタ" class="gallery-image">
+                            <div class="gallery-caption">金目鯛と巨峰のクルディタ</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\katsuo.jpg" alt="厚切り鰹" class="gallery-image">
+                            <div class="gallery-caption">厚切り鰹</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\kuskus.jpg" alt="魚介のクスクス" class="gallery-image">
+                            <div class="gallery-caption">魚介のクスクス</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\pasta1.jpg" alt="サルシッチャとズッキーニアーモンドクリームフジッリ" class="gallery-image">
+                            <div class="gallery-caption">サルシッチャとズッキーニアーモンドクリームフジッリ</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\uikyomakaroni.jpg" alt="手打ちマッケローニイワシとウイキョウ" class="gallery-image">
+                            <div class="gallery-caption">手打ちマッケローニイワシとウイキョウ</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\magurospagetti.jpg" alt="マグロカラスミのスパゲッティ" class="gallery-image">
+                            <div class="gallery-caption">マグロカラスミのスパゲッティ</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\pasta2.jpg" alt="パスタ" class="gallery-image">
+                            <div class="gallery-caption">パスタ</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\sumibiyaki.jpg" alt="カンパチの炭火焼" class="gallery-image">
+                            <div class="gallery-caption">カンパチの炭火焼</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\chiken.jpg" alt="秋田比内地鶏腿肉の炭火焼" class="gallery-image">
+                            <div class="gallery-caption">秋田比内地鶏腿肉の炭火焼</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\buta.jpg" alt="金豚肩ロース" class="gallery-image">
+                            <div class="gallery-caption">金豚肩ロース</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\kohitsuji.jpg" alt="仔羊と白インゲン豆の煮込み" class="gallery-image">
+                            <div class="gallery-caption">仔羊と白インゲン豆の煮込み</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\ushisuneniku.jpg" alt="牛スネ肉ビール煮込" class="gallery-image">
+                            <div class="gallery-caption">牛スネ肉ビール煮込</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\kinbuta.jpg" alt="山形平田牧場金華豚肩ロースカリフラワーロースト" class="gallery-image">
+                            <div class="gallery-caption">山形平田牧場金華豚肩ロースカリフラワーロースト</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\semifretto.jpg" alt="セミフレッドデザート" class="gallery-image">
+                            <div class="gallery-caption">セミフレッドデザート</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\pudding.jpg" alt="焼きプリン" class="gallery-image">
+                            <div class="gallery-caption">焼きプリン</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\musu.jpg" alt="栗のムース" class="gallery-image">
+                            <div class="gallery-caption">栗のムース</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\purin.jpg" alt="プリン" class="gallery-image">
+                            <div class="gallery-caption">プリン</div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- イベント -->
+                <section id="events" class="gallery-section">
+                    <h2><i class="fas fa-calendar-alt"></i> イベント </h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="photo\mamma1.JPG" alt="MAMMA MIA1" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma2.JPG" alt="MAMMA MIA2" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma3.png" alt="MAMMA MIA3" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma4.jpg" alt="MAMMA MIA4" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma5.jpg" alt="MAMMA MIA5" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma6.jpg" alt="MAMMA MIA6" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma7.jpg" alt="MAMMA MIA7" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma8.jpg" alt="MAMMA MIA8" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma9.jpg" alt="MAMMA MIA9" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma10.jpg" alt="MAMMA MIA10" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma11.jpg" alt="MAMMA MIA11" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma12.jpg" alt="MAMMA MIA12" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma13.jpg" alt="MAMMA MIA13" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma14.jpg" alt="MAMMA MIA14" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="photo\mamma15.jpg" alt="MAMMA MIA15" class="gallery-image">
+                            <div class="gallery-caption">MAMMA MIA 2025</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ROZZO Sicilia</h3>
+                    <p>伝統的なシチリア料理と幅広い種類のワインをご用意しております。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>営業時間</h3>
+                    <p>火・水・木・金・土</p>
+                    <p>17:00 ~ 23:00</p>
+                    <p>定休日: 日・月</p>
+                    <p>L.O. 料理 21:00 / ドリンク 23:00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>お問い合わせ</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 〒108-0072 東京都港区白金高輪１−１−１２ 内野マンション１F</p>
+                    <p><i class="fas fa-phone"></i> 03-5447-1955 </p>
+                    <p><i class="fas fa-envelope"></i> rozzosicilia@celery.ocn.ne.jp</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/rozzo_sicilia?igsh=MWExYzk1NWx0d2Zvcg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tabelog.com/tokyo/A1316/A131602/13131551/" target="_blank"><i class="fa-brands fa-blogger"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Rozzo Sicilia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+
+    <!-- Modal window for images -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="image-container">
+                <img id="modalImage" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmaWxsPSIjOTk5Ij5JbWFnZSBsb2FkaW5nLi4uPC90ZXh0Pjwvc3ZnPg==" alt="Loading..." class="modal-image">
+                <div id="modalCaption" class="modal-caption">Loading...</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

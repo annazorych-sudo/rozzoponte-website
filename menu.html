@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozzo Sicilia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <!-- side menu -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>MENU</h2>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> ホームページ </a></li>
+                <li><a href="concept.html"><i class="fas fa-calendar-check"></i> ROZZOはこんなお店です </a></li>
+                <li class="has-submenu">
+                    <a href="menu.html"><i class="fas fa-utensils"></i> メニュー <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="menu.html#main">メインメニュー</a></li>
+                        <li><a href="menu.html#season">季節のメニュー</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="wine.html"><i class="fas fa-wine-glass-alt"></i> ワイン <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="wine.html#list">ワインリスト</a></li>
+                        <li><a href="wine.html#delivery">ワイン配達</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="gallery.html"><i class="fas fa-images"></i> ギャラリー <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="gallery.html#interior">インテリア</a></li>
+                        <li><a href="gallery.html#dishes">料理</a></li>
+                        <li><a href="gallery.html#events">イベント</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html"><i class="fas fa-map-marker-alt"></i> お問い合わせ </a></li>
+                <li><a href="job.html"><i class="fas fa-map-marker-alt"></i> 求職者向けの求人情報 </a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- darkness bg -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- header -->
+    <header>
+        <div class="container header-content">
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="logo">
+                <h1>ROZZO SICILIA</h1>
+            </div>
+            
+            <div class="contacts">
+                <a href="tel:+810354471955" aria-label="電話で連絡してください"><i class="fas fa-phone"></i></a>
+                <a href="https://www.instagram.com/rozzo_sicilia?igsh=YWYwZm0zYW1wMXgw" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#app" aria-label="もうすぐiPhoneアプリが登場します"><i class="fas fa-mobile-alt"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Content -->
+    <main>
+        <div class="container">
+            <div class="page-content">
+                <!-- Main Menu Section -->
+                <section id="main" class="menu-section menu-anchor">
+                    <div class="section-header">
+                        <h2>メインメニュー</h2>
+                        <p>当店自慢の定番シチリア料理をご堪能ください</p>
+                    </div>
+                    
+                    <div class="menu-gallery">
+                        <!-- Menu Item 1 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/panll.jpg" alt="パネッレ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">ひよこ豆のパネッレ</h3>
+                                <p class="menu-item-desc">シチリアのトラットリアに行くと注文しなくても出てきたり、屋台でパンに挟んで食べたり、彼らにとってはなくてはならない料理。ひよこ豆の粉を火にかけながら練って練ってとろりとしたところでお皿の窪みに流し込み固まったら、揚げるだけ。</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Menu Item 2 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/kaponata.jpg" alt="カポナータ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">シチリア永世定番　茄子のカポナータ</h3>
+                                <p class="menu-item-desc">シチリアのほとんどのトラットリアのメニューにある定番中の定番。そしてロッツォシチリアで一番胸を張ってお出しできる料理でもあります。</p>
+                            </div>
+                        </div>
+
+                        <!-- Menu Item 3 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/tamago.jpg" alt="ゆで卵">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">ゆで卵とトマトソース漬</h3>
+                                <p class="menu-item-desc">シチリアは卵をとても大事にする。お肉と同じ扱い。だからある店では前菜はゆで卵のみ。もしくはゆで卵とウイキョウだけのサラダがあったり。この料理はお店のメニューに出すまでに2年以上かかった。でもリピーター多数。食べてみてください。</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Menu Item 4 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/mozarella.jpg" alt="モッツァレラ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">群馬田園プラザのブッラータ</h3>
+                                <p class="menu-item-desc">モッツァレラに生クリームを包ませてとろっとろ。プチトマトのマリネを添えて食べてもらいます。2011年のオープン時からずっと出しているロッツォの定番です。</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Menu Item 5 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/pakuci.jpg" alt="パクチーサラダ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">パクチーとローストナッツ、春菊のサラダ。ヘーゼルナッツオイルドレッシング。</h3>
+                                <p class="menu-item-desc">日本のイタリアンパセリは香りが弱いのでそこをパクチーと春菊に置き換えてつくるサラダ。バルサミコにつけた小玉ねぎとナッツの香ばしさが秀逸です。</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Menu Item 6 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/kururita.jpg" alt="サーモンのクルディタ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">静岡紅富士サーモンのクルディタ</h3>
+                                <p class="menu-item-desc">３枚に下ろした脂の綺麗なサーモンを軽く塩漬け。生ハム状態にしてから薄くスライス。ディルとミント、クリームチーズを混ぜたものを塗って粒マスタードとマリネしたきのことともにどうぞ。</p>
+                            </div>
+                        </div>
+
+                        <!-- Menu Item 7 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/karpione.jpg" alt="カルピオーネ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">豆あじのカルピオーネ</h3>
+                                <p class="menu-item-desc">豆あじをカリッカリに素揚げ。松の実レーズン，玉ねぎ人参を甘酸っぱくソテー。その甘酸っぱいを豆あじにザバっとかけて2日マリネしたら出来上がり。</p>
+                            </div>
+                        </div>
+
+                        <!-- Menu Item 8 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/figu.jpg" alt="白イチヂクとカマンベール、ゴルゴンゾーラ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">白イチヂクとカマンベール、ゴルゴンゾーラ</h3>
+                                <p class="menu-item-desc">シェフの中村は果物使うのが上手。ヘーゼルナッツはも注文受けてから香りが立つような削る。そこに蜂蜜とオリーブオイル。このお皿を独り占めして、白を一本あけたいんだよ。</p>
+                            </div>
+                        </div>
+
+                        <!-- Menu Item 9 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/cheese.jpg" alt="チーズの盛り合わせ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">チーズの盛り合わせ</h3>
+                                <p class="menu-item-desc">なんてことはない。買ってきたチーズを切って乗せる。それだけ。でもいい温度、いい状態、というのはあると思う。冷えてて固いチーズよりも、室温にこなれてトロリがいいに決まってる。頼んでみてください。そんな感じです。</p>
+                            </div>
+                        </div>
+
+                        <!-- Menu Item 10 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/kutakuta.jpg" alt="青野菜のクタクタ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">青野菜のクタクタ</h3>
+                                <p class="menu-item-desc">季節の青菜を1人では持ちきれないような大きな鍋に入れてじっくりと炒める。しなりとしてきたら、蓋をしてしばらく蒸す。最後仕上げにオリーブオイル。それだけだけど、大量に作ることでやたら上手くなる。魚の煮物もクタクタも。</p>
+                            </div>
+                        </div>
+
+                        <!-- Menu Item 11 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/furita.jpg" alt="フリット盛り合わせ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">野菜のフリット盛り合わせ</h3>
+                                <p class="menu-item-desc">千葉の古代レンコンと新潟の八色椎茸。椎茸は厚みがあればあるだけ、フリットにした時の旨みを含んだ肉汁がたまりません。蓮根は利根川の底から出てきた日本原産の蓮根。今出回ってるのは中国が原産の種。食べ比べると触感がムチムチ。色は真っ白。今までにない蓮根体験ができるはずです。</p>
+                            </div>
+                        </div>
+
+                        <!-- Menu Item 12 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/isaki.jpg" alt="本日鮮魚の炭火焼き">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">本日鮮魚の炭火焼き</h3>
+                                <p class="menu-item-desc">これはイサキ。夏のお魚。炭火で皮目を香ばしく焼くことで、塩とオリーブオイルだけでも、とんでもないご馳走に化けるのが、料理の醍醐味。魚の香ばしい脂を吸ったオリーブオイルをパンにつけて食べるのもまた素晴らしい。</p>
+                            </div>
+                        </div>
+
+                        <!-- Menu Item 13 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/maguro.jpg" alt="マグロのタリアータ">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">厚切りマグロのタリアータ</h3>
+                                <p class="menu-item-desc">火を入れすぎると硬くなるマグロを遠火でじっくり火を入れて、ミントと合わせる。シチリアでマグロとミント、はこの国でいう鰻と山椒か。下には玉ねぎとにんじんのアグロドルチェを敷いて一緒に食べまてもらいます。マグロの脂の香りと鉄分がミントとドンピシャ。</p>
+                            </div>
+                        </div>
+
+                        <!-- Menu Item 14 -->
+                        <div class="menu-item">
+                            <div class="menu-item-img">
+                                <img src="photo/katarosuto.jpg" alt="肩ロースのロースト">
+                            </div>
+                            <div class="menu-item-content">
+                                <h3 class="menu-item-title">山形平田牧場金華豚肩ロースのロースト</h3>
+                                <p class="menu-item-desc">塊をオーブンでロースト。この段階で脂は落ちる。そして豚のムチムチした甘いゼラチンは残りそれをお肉から出ただし汁と野菜と一緒に小鍋に入れて味を含ませて完成。ロースト、といっても外側はこんがりではなくて、ムチムチブリブリとした触感。豚のうまさは脂の旨さ。それをしっかり感じてもらえる一皿。</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                
+                <!-- Seasonal Menu Section -->
+                <section id="season" class="menu-section menu-anchor">
+                    <div class="section-header">
+                        <h2>季節のメニュー</h2>
+                        <p>旬の食材を使った期間限定のスペシャルメニュー</p>
+                    </div>
+                    
+                    <div class="seasonal-menu-list">
+                        <!-- Seasonal Item 1 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">佐島真蛸、京都万願寺、焼きなす、黒オリーブペースト</span>
+                            <span class="seasonal-item-price">¥3,000</span>
+                        </div>
+                        
+                        <!-- Seasonal Item 2 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">静岡沼津豆あじカルピオーネ</span>
+                            <span class="seasonal-item-price">¥2,400</span>
+                        </div>
+
+                        <!-- Seasonal Item 3 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">黒キャベツ、人参、生ハム、野菜のごった煮</span>
+                            <span class="seasonal-item-price">¥2,400</span>
+                        </div>
+                        
+                        <!-- Seasonal Item 4 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">静岡紅富士サーモンクルディタ</span>
+                            <span class="seasonal-item-price">¥3,000</span>
+                        </div>
+
+                        <!-- Seasonal Item 5 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">新潟八色椎茸と千葉古代根フリット盛</span>
+                            <span class="seasonal-item-price">¥1,800</span>
+                        </div>
+                        
+                        <!-- Seasonal Item 6 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">春菊、パクチー、焼ナッツ、バルサミコ小玉ねぎサラダ</span>
+                            <span class="seasonal-item-price">¥1,800</span>
+                        </div>
+                        
+                        <!-- Seasonal Item 7 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">練馬イチジクヘーゼルナッツゴルゴンゾーラ</span>
+                            <span class="seasonal-item-price">¥2,800</span>
+                        </div>
+                        
+                        <!-- Seasonal Item 8 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">鳥取剣先イカ炭火焼</span>
+                            <span class="seasonal-item-price">¥3,400</span>
+                        </div>
+                        
+                        <!-- Seasonal Item 9 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">群馬田園プラザブッラータ 高知リサジュエルトマト</span>
+                            <span class="seasonal-item-price">¥3,200</span>
+                        </div>
+                               
+                        <!-- Seasonal Item 10 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">スペイン産生ハムと茨城メロン</span>
+                            <span class="seasonal-item-price">¥3,200</span>
+                        </div>
+                
+                        <!-- Seasonal Item 11 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">鰯ウイキョウ松の実スパゲッティ</span>
+                            <span class="seasonal-item-price">¥2,600</span>
+                        </div>
+
+                        <!-- Seasonal Item 12 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">ルッコラペースト、おおまり（落花生）のリゾット</span>
+                            <span class="seasonal-item-price">¥2,600</span>
+                        </div>
+
+                        <!-- Seasonal Item 13 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">サルシッチャとズッキーニアーモンドクリームフジッリ</span>
+                            <span class="seasonal-item-price">¥2,800</span>
+                        </div>
+
+                        <!-- Seasonal Item 14 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">志津川湾真蛸のラグーとペコリーノスパゲティ</span>
+                            <span class="seasonal-item-price">¥2,600</span>
+                        </div>
+
+                        <!-- Seasonal Item 15 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">鹿島東町 真鯛 炭火燒</span>
+                            <span class="seasonal-item-price">¥4,000</span>
+                        </div>
+
+                        <!-- Seasonal Item 16 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">三崎まるいち選厚切りまぐろタリアーダ炭火焼</span>
+                            <span class="seasonal-item-price">¥3,400</span>
+                        </div>
+
+                        <!-- Seasonal Item 17 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">山形金華豚肩ロース いろいろインゲン</span>
+                            <span class="seasonal-item-price">¥3,400</span>
+                        </div>
+
+                        <!-- Seasonal Item 18 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">牛すね肉の黒ビール煮込み</span>
+                            <span class="seasonal-item-price">¥5,600</span>
+                        </div>
+
+                        <!-- Seasonal Item 19 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">熊本あか牛、サーロイン炭火焼“タリアータ</span>
+                            <span class="seasonal-item-price">¥9,000</span>
+                        </div>
+
+                        <!-- Seasonal Item 20 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name">秋田比内地鶏胸肉もしくは腿肉炭火焼</span>
+                            <span class="seasonal-item-price">¥4,800</span>
+                        </div>
+
+                        <!-- Seasonal Item 21 -->
+                        <div class="seasonal-item">
+                            <span class="seasonal-item-name"></span>
+                            <span class="seasonal-item-price"></span>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Note Section -->
+                <div class="menu-note">
+                    <h3>ご注意事項</h3>
+                    <h5>
+                        ・メニューは季節や仕入れ状況により変更となる場合がございます。<br>
+                        ・価格は税込表示です。<br>
+                        ・アレルギー対応についてはお気軽にお声がけください。<br>
+                        ・食材の仕入れ状況により、一部メニューがご提供できない場合がございます。<br>
+                        ・すべての料理の量は取り分ける人数によって、僕らスタッフが変更します。
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ROZZO Sicilia</h3>
+                    <p>伝統的なシチリア料理と幅広い種類のワインをご用意しております。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>営業時間</h3>
+                    <p>火・水・木・金・土</p>
+                    <p>17:00 ~ 23:00</p>
+                    <p>定休日: 日・月</p>
+                    <p>L.O. 料理 21:00 / ドリンク 23:00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>お問い合わせ</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 〒108-0072 東京都港区白金高輪１−１−１２ 内野マンション１F</p>
+                    <p><i class="fas fa-phone"></i> 03-5447-1955 </p>
+                    <p><i class="fas fa-envelope"></i> rozzosicilia@celery.ocn.ne.jp</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/rozzo_sicilia?igsh=MWExYzk1NWx0d2Zvcg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tabelog.com/tokyo/A1316/A131602/13131551/" target="_blank"><i class="fa-brands fa-blogger"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Rozzo Sicilia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

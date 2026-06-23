@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ワイン - Rozzo Sicilia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- side menu -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>MENU</h2>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> ホームページ </a></li>
+                <li><a href="concept.html"><i class="fas fa-calendar-check"></i> ROZZOはこんなお店です </a></li>
+                <li class="has-submenu">
+                    <a href="menu.html"><i class="fas fa-utensils"></i> メニュー <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="menu.html#main">メインメニュー</a></li>
+                        <li><a href="menu.html#season">季節のメニュー</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="wine.html"><i class="fas fa-wine-glass-alt"></i> ワイン <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="wine.html#list">ワインリスト</a></li>
+                        <li><a href="wine.html#delivery">ワイン配達</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="gallery.html"><i class="fas fa-images"></i> ギャラリー <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="gallery.html#interior">インテリア</a></li>
+                        <li><a href="gallery.html#dishes">料理</a></li>
+                        <li><a href="gallery.html#events">イベント</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacts.html"><i class="fas fa-map-marker-alt"></i> お問い合わせ </a></li>
+                <li><a href="job.html"><i class="fas fa-map-marker-alt"></i> 求職者向けの求人情報 </a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- darkness bg -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- header -->
+    <header>
+        <div class="container header-content">
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="logo">
+                <h1>ROZZO SICILIA</h1>
+            </div>
+            
+            <div class="contacts">
+                <a href="tel:+810354471955"><i class="fas fa-phone"></i></a>
+                <a href="https://www.instagram.com/rozzo_sicilia?igsh=YWYwZm0zYW1wMXgw" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#app"><i class="fas fa-mobile-alt"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Content -->
+    <main>
+        <div class="container">
+            <div class="page-content">
+                <!-- wine list section -->
+                <section id="list" class="wine-section">
+                    <h2>ワインリスト</h2>
+                    <div class="wine-list">
+                        <!-- wine 1 -->
+                        <div class="wine-item">
+                            <div class="wine-image">
+                                <img src="photo\wine1.JPG" alt="Giasira Keration">
+                            </div>
+                            <div class="wine-info">
+                                <h3>Giasira Keration 2021</h3>
+                                <p>シチリアの固有品種カタラット100%。熟したリンゴのようなポッテリした旨味とほんのり香るヨード。ここまではカタラットの典型ですが、バランスが素晴らしい。つぶつぶした細かい粒子を連想させる綺麗な酸と心地よい鉄分を含んだ苦味。この二つの要素がワインを立体的にして、しかもブルゴーニュのピノをのような緑茶のニュアンス。魚介からフリット、なんでもこい、の海の白。</p>
+                            </div>
+                        </div>
+                        
+                        <!-- wine 2 -->
+                        <div class="wine-item">
+                            <div class="wine-image">
+                                <img src="photo/wine2.jpg" alt="Isolanuda">
+                            </div>
+                            <div class="wine-info">
+                                <h3>Destro Etna Bianco 2021 Isolanuda</h3>
+                                <p>シチリア地品種カリッカンテとグレカニコのブレンド。標高3600メートルの単独峰にして活火山のエトナ火山で作られる白ワイン。火山のミネラルでガッチガチに固いエトナビアンコが多い中で、今すぐに楽しめる珍しい白。酸化熟成からくるローストしたナッツやシェリーのような乾いた香ばしさ。口に含むと圧倒的な密度の液体が口中に広がります。皮目を香ばしく焼き上げた鶏肉、魚卵、焼き野菜。</p>
+                            </div>
+                        </div>
+                        
+                        <!-- wine 3 -->
+                        <div class="wine-item">
+                            <div class="wine-image">
+                                <img src="photo/wine3.jpg" alt="Kados Grillo">
+                            </div>
+                            <div class="wine-info">
+                                <h3>Duca di Salaparuta Kados 2022 Grillo</h3>
+                                <p>グリッロ特有の鉄を含んだ心地よい苦味とグレープフルーツの香りそのままにほんのりとした塩気と大樽熟成のとろりまろやかさ。ボリューム感も楽しめるが、ちょうど良い落とし所でお料理も全て合わせられる。</p>
+                            </div>
+                        </div>
+                        
+                        <!-- wine 4 -->
+                        <div class="wine-item">
+                            <div class="wine-image">
+                                <img src="photo/wine4.jpg" alt="Marzaiolo Riofavara">
+                            </div>
+                            <div class="wine-info">
+                                <h3>Marzaiolo Terre Siciliane Riofavara</h3>
+                                <p>シチリア地品種を3種類ブレンド。乾燥した南東部の塩気を帯びた風味。オレンジピール、グリーンハーブ、ほんの少しのヨード。爽やかな香りとさらりとした柑橘の飲み口。</p>
+                            </div>
+                        </div>
+
+                        <!-- wine 5 -->
+                        <div class="wine-item">
+                            <div class="wine-image">
+                                <img src="photo/wine5.jpg" alt="Colpaola">
+                            </div>
+                            <div class="wine-info">
+                                <h3>Colpaola Verdecchio di Matelica 2023</h3>
+                                <p>ヴェルデッキオ100%。貝の堆積と塩の湖。かなりの特殊な土地が地震によって隆起して山になっている場所。ワインを作るにはあまりにも恵まれた場所で生まれたこのワインは、生牡蠣、つぶ貝、ホッキ貝など、鼻腔に磯が抜けるものに対して万能。青リンゴ、タイム、セージ、口に含むと、ぎしっとした固いミネラルと塩気。それを貫く綺麗な酸。</p>
+                            </div>
+                        </div>
+
+                        <!-- wine 6 -->
+                        <div class="wine-item">
+                            <div class="wine-image">
+                                <img src="photo/wine6.jpg" alt="Pistus Etna Rosso">
+                            </div>
+                            <div class="wine-info">
+                                <h3>I Custodi Etna Rosso Pistus 2021</h3>
+                                <p>ネレッロマスカレーゼとカプッチョ。富士山とほぼ同じ標高で尚且つ活火山。ブドウの樹は絶えず足元から地熱を与えられて育つ世界で無二の環境。ピノノワールを連想させるようなエレガントにほんのりと甘苦いミネラル。四年経ち飲み口は丸みを帯びて透明感も感じる。今が飲み頃。</p>
+                            </div>
+                        </div>
+
+                        <!-- wine 7 -->
+                        <div class="wine-item">
+                            <div class="wine-image">
+                                <img src="photo/wine7.jpg" alt="Nero D'Avola">
+                            </div>
+                            <div class="wine-info">
+                                <h3>Ippolito Nero D'Avola</h3>
+                                <p>凝灰岩の有名な山地。それを利用した遺跡の町としても有名なアグリジェント。基本西側だと果実味がブリブリに出てしまうネロダヴォラだが，標高が高い分綺麗な酸が味わいを清潔にする。ネロダヴォラ特有のカシス、ベリーはあるが、ボトリングされて四年経過してまろやかさを増した液体は全てのバランスがとれたまさにうまい地酒。</p>
+                            </div>
+                        </div>
+
+                        <!-- wine 8 -->
+                        <div class="wine-item">
+                            <div class="wine-image">
+                                <img src="photo/wine8.jpg" alt="Manenti Frappato">
+                            </div>
+                            <div class="wine-info">
+                                <h3>Manenti Frappato 2022</h3>
+                                <p>シチリアの赤で代表的なブトウはネロダヴォラとネレッロマスカレーぜの二つ。近年そこに食い込んできてるのがこのフラッパート。スミレ、金木犀の華やかな香り、そこに淡いトマト。口に含むと、チェリー、その裏にワカメ、昆布のようなヨードとお出汁。余韻が長く魚介を合わせたい。</p>
+                            </div>
+                        </div>
+
+                        <!-- wine 9 -->
+                        <div class="wine-item">
+                            <div class="wine-image">
+                                <img src="photo/wine9.jpg" alt="Tenuta La Favola">
+                            </div>
+                            <div class="wine-info">
+                                <h3>Eloro Pachino Tenuta La Favola 2020</h3>
+                                <p>ネロダヴォラ100%。シチリアで生産量一位のネロダヴォラ発祥の地として知られるエローロパッキーノ。雨はほとんど降らない乾燥した土地で世界的に有名なのはプチトマト。ほとんどの作り手は灌漑設備を準備して毎回枯れるかどうかのギリギリをすり抜ける。ローズマリー、黒糖、ラズベリー、チェリー、それらを深い森の中で味わうような体験ができる素晴らしい赤。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- wine delivery section -->
+                <section id="delivery" class="wine-delivery-section">
+                    <h2>ワイン届けます！</h2>
+                    <div class="delivery-content">
+                        <div class="delivery-info">
+                            <p>ロッツオシチリアではイタリアワインのデリバリー、配送、をはじめます。</p>
+                            <p>イタリアワインは説明ひとつで味が変わる楽しいお酒です。デリバリーならお店と同じ楽しい説明を、配送なら詳しい説明書を。</p>
+                            <p>どちらもセットでお渡ししますので、どうぞたっぷり愛して！</p>
+                            <p>まずは右のQRコードを読み取ってください。</p>
+                            <p>専用のラインからご注文、ご質問なんでもどうぞ！</p>
+                        </div>
+                        <div class="qr-code">
+                            <img src="photo\qr.png" alt="QR">
+                            <p>オンライン注文はこちら</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ROZZO Sicilia</h3>
+                    <p>伝統的なシチリア料理と幅広い種類のワインをご用意しております。</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>営業時間</h3>
+                    <p>火・水・木・金・土</p>
+                    <p>17:00 ~ 23:00</p>
+                    <p>定休日: 日・月</p>
+                    <p>L.O. 料理 21:00 / ドリンク 23:00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>お問い合わせ</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 〒108-0072 東京都港区白金高輪１−１−１２ 内野マンション１F</p>
+                    <p><i class="fas fa-phone"></i> 03-5447-1955 </p>
+                    <p><i class="fas fa-envelope"></i> rozzosicilia@celery.ocn.ne.jp</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/rozzo_sicilia?igsh=MWExYzk1NWx0d2Zvcg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tabelog.com/tokyo/A1316/A131602/13131551/" target="_blank"><i class="fa-brands fa-blogger"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Rozzo Sicilia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
